@@ -17,7 +17,11 @@ Projeto desenvolvido para a Prova Interdisciplinar de Robótica e Desenvolviment
 | 13 | LED |
 | GND | Catodo LED |
 
-Inserir foto do circuito nesta seção.
+## Esquema de Ligações
+
+Pino 13 → Resistor 330Ω → LED → GND
+
+Fotos do circuito disponíveis na pasta /fotos.
 
 ## Como usar
 
