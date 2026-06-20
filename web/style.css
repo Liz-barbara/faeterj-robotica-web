@@ -89,3 +89,18 @@ footer{
     text-align:center;
     padding:15px;
 }
+
+.atualizacao{
+    margin-top:10px;
+    color:#666;
+    font-size:14px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.painel{
+    min-width:320px;
+    text-align:center;
+}
