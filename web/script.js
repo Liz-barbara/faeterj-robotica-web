@@ -14,9 +14,13 @@ function ligarLed() {
 
     led.classList.add("ligado");
 
-    statusText.textContent = "LED LIGADO";
+    statusText.textContent =
+        "🟢 LED LIGADO";
 
-    localStorage.setItem("estadoLed", "ligado");
+    localStorage.setItem(
+        "estadoLed",
+        "ligado"
+    );
 
     atualizarDataHora();
 }
@@ -25,9 +29,13 @@ function desligarLed() {
 
     led.classList.remove("ligado");
 
-    statusText.textContent = "LED DESLIGADO";
+    statusText.textContent =
+        "🔴 LED DESLIGADO";
 
-    localStorage.setItem("estadoLed", "desligado");
+    localStorage.setItem(
+        "estadoLed",
+        "desligado"
+    );
 
     atualizarDataHora();
 }
