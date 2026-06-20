@@ -1,60 +1,91 @@
 :root {
-    --primary-color: #2563eb;
-    --bg-color: #f4f4f4;
+    --primary: #2563eb;
+    --background: #f3f4f6;
+    --card: #ffffff;
 }
 
-body {
-    margin: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family: Arial, sans-serif;
-    background: var(--bg-color);
-    text-align: center;
+    background: var(--background);
+    min-height:100vh;
 }
 
-header,
-footer {
-    background: var(--primary-color);
-    color: white;
-    padding: 15px;
+header{
+    background: var(--primary);
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
-main {
-    min-height: 70vh;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    gap: 20px;
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:40px;
 }
 
-#led {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: gray;
-
-    transition: 0.5s;
+.painel{
+    background:var(--card);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
 }
 
-.ligado {
-    background: lime;
-    box-shadow: 0 0 30px lime;
+#led{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background:#555;
+    margin:auto;
+    transition:0.4s;
 }
 
-button {
-    padding: 12px 20px;
-    cursor: pointer;
+.ligado{
+    background:#00ff66;
+    box-shadow:
+    0 0 20px #00ff66,
+    0 0 40px #00ff66,
+    0 0 60px #00ff66;
 }
 
-.buttons {
-    display: flex;
-    gap: 10px;
+button{
+    padding:12px 24px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
 }
 
-@media(max-width:600px) {
-    .buttons {
-        flex-direction: column;
-    }
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.buttons button:first-child{
+    background:#22c55e;
+    color:white;
+}
+
+.buttons button:last-child{
+    background:#ef4444;
+    color:white;
+}
+
+#status{
+    font-weight:bold;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
 }
