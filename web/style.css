@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #2563eb;
+    --bg-color: #f4f4f4;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    text-align: center;
+}
+
+header,
+footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+}
+
+main {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+#led {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: gray;
+
+    transition: 0.5s;
+}
+
+.ligado {
+    background: lime;
+    box-shadow: 0 0 30px lime;
+}
+
+button {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+@media(max-width:600px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
